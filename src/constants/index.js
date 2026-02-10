@@ -46,7 +46,7 @@ export const myProjects = [
     ],
     href: '',
     logo: '',
-    image: '/assets/projects/accessories.jpg',
+    image: '/assets/projects/clicon-ecommerce/main.png',
     tags: [
       {
         id: 1,
