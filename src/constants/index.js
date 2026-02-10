@@ -12,23 +12,23 @@ export const myProjects = [
     ],
     href: '',
     logo: '',
-    image: '/assets/projects/accessories.jpg',
+    image: '/My-portfolio/assets/projects/accessories.jpg',
     tags: [
       {
         id: 1,
         name: 'Angular',
-        path: '/assets/logos/angular.svg',
+        path: '/My-portfolio/assets/logos/angular.svg',
       },
       {
         id: 2,
         name: 'TypeScript',
-        path: '/assets/logos/typescript.svg',
+        path: '/My-portfolio/assets/logos/typescript.svg',
       },
 
       {
         id: 4,
         name: 'TailwindCSS',
-        path: '/assets/logos/tailwindcss.svg',
+        path: '/My-portfolio/assets/logos/tailwindcss.svg',
       },
     ],
   },
@@ -46,23 +46,23 @@ export const myProjects = [
     ],
     href: '',
     logo: '',
-    image: '/assets/projects/clicon-ecommerce/main.png',
+    image: '/My-portfolio/assets/projects/clicon-ecommerce/main.png',
     tags: [
       {
         id: 1,
         name: 'Next.js',
-        path: '/assets/logos/next2.svg',
+        path: '/My-portfolio/assets/logos/next2.svg',
       },
       {
         id: 2,
         name: 'TypeScript',
-        path: '/assets/logos/typescript.svg',
+        path: '/My-portfolio/assets/logos/typescript.svg',
       },
 
       {
         id: 4,
         name: 'TailwindCSS',
-        path: '/assets/logos/tailwindcss.svg',
+        path: '/My-portfolio/assets/logos/tailwindcss.svg',
       },
 
       {
@@ -85,27 +85,27 @@ export const myProjects = [
     ],
     href: '',
     logo: '',
-    image: '/assets/projects/accessories.jpg',
+    image: '/My-portfolio/assets/projects/accessories.jpg',
     tags: [
       {
         id: 1,
         name: 'Next.js',
-        path: '/assets/logos/next2.svg',
+        path: '/My-portfolio/assets/logos/next2.svg',
       },
       {
         id: 2,
         name: 'TypeScript',
-        path: '/assets/logos/typescript.svg',
+        path: '/My-portfolio/assets/logos/typescript.svg',
       },
       {
         id: 3,
         name: 'Django',
-        path: '/assets/logos/django.svg',
+        path: '/My-portfolio/assets/logos/django.svg',
       },
       {
         id: 4,
         name: 'TailwindCSS',
-        path: '/assets/logos/tailwindcss.svg',
+        path: '/My-portfolio/assets/logos/tailwindcss.svg',
       },
     ],
   },
@@ -115,17 +115,17 @@ export const mySocials = [
   {
     name: 'WhatsApp',
     href: '',
-    icon: '/assets/socials/whatsApp.svg',
+    icon: ' /My-portfolio/assets/socials/whatsApp.svg',
   },
   {
     name: 'Linkedin',
     href: 'https://github.com/MisterCat752',
-    icon: '/assets/socials/linkedIn.svg',
+    icon: '/My-portfolio/assets/socials/linkedIn.svg',
   },
   {
     name: 'Instagram',
     href: 'https://github.com/MisterCat752',
-    icon: '/assets/socials/instagram.svg',
+    icon: '/My-portfolio/assets/socials/instagram.svg',
   },
 ];
 
