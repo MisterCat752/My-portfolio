@@ -47,6 +47,7 @@ export const myProjects = [
       },
     ],
   },
+  // 2
   {
     id: 2,
     title: 'Cocktail Bar Landing Page',
@@ -86,8 +87,9 @@ export const myProjects = [
       },
     ],
   },
+  // 3
   {
-    id: 1,
+    id: 3,
     title: 'Solar Equipment Store & Admin System',
     description:
       'A large Angular-based e-commerce platform for solar equipment featuring a customer storefront and a powerful administrative dashboard.',
@@ -116,6 +118,47 @@ export const myProjects = [
         id: 1,
         name: 'Angular',
         path: '/My-portfolio/assets/logos/angular.svg',
+      },
+      {
+        id: 2,
+        name: 'TypeScript',
+        path: '/My-portfolio/assets/logos/typescript.svg',
+      },
+
+      {
+        id: 4,
+        name: 'TailwindCSS',
+        path: '/My-portfolio/assets/logos/tailwindcss.svg',
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: 'Pizza & Food Ordering Platform',
+    description:
+      'A Next.js-based e-commerce platform focused on pizza but allowing orders for other foods, featuring a responsive storefront and interactive shopping experience.',
+    subDescription: [
+      'Developed a client-facing store with product filtering, multiple product variations, and a shopping cart.',
+      'Implemented Redux for state management, including cart and order handling.',
+      'Built parallel Next.js routes for optimized performance and faster navigation.',
+      'Enabled users to place orders with customizable options for each product.',
+      'Designed a scalable and responsive UI to support future food categories and business expansion.',
+    ],
+    href: '',
+    logo: '',
+    image: '/My-portfolio/assets/projects/pizza/1.png',
+    images: [
+      '/My-portfolio/assets/projects/pizza/1.png',
+      '/My-portfolio/assets/projects/pizza/2.png',
+      '/My-portfolio/assets/projects/pizza/3.png',
+      '/My-portfolio/assets/projects/pizza/4.png',
+      '/My-portfolio/assets/projects/pizza/5.png',
+    ],
+    tags: [
+      {
+        id: 1,
+        name: 'Next.js',
+        path: '/My-portfolio/assets/logos/next2.svg',
       },
       {
         id: 2,

@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
 
-export const CustomSlider = ({ slides }) => {
+const CustomSlider = ({ slides }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -15,11 +15,12 @@ export const CustomSlider = ({ slides }) => {
     <div className='relative'>
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index}>
+          <div key={index} className='flex h-[450px] justify-center'>
             <img
               src={slide}
               alt={slide}
-              className='w-full h-[450px] object-cover rounded-t-2xl'
+              loading='lazy'
+              className='w-full  h-full рobject-contain rounded-2xl'
             />
           </div>
         ))}
@@ -27,3 +28,4 @@ export const CustomSlider = ({ slides }) => {
     </div>
   );
 };
+export default CustomSlider;

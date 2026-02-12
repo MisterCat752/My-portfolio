@@ -1,7 +1,9 @@
+ 
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+
+@import "tailwindcss";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
-@import "tailwindcss";
 @theme {
   --color-primary: #030412;
   --color-midnight: #06091f;
@@ -147,5 +149,5 @@ body {
 }
 
 .custom-dots {
-  bottom:-15
+  bottom:-25
 }

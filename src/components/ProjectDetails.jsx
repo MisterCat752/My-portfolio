@@ -1,5 +1,8 @@
 import { motion } from 'motion/react';
-import { CustomSlider } from './CustomSlider';
+import { Suspense, lazy } from 'react';
+
+// ленивый импорт
+const LazySlider = lazy(() => import('./CustomSlider'));
 
 const ProjectDetails = ({
   title,
@@ -12,8 +15,12 @@ const ProjectDetails = ({
   closeModal,
 }) => {
   return (
-    <div className='fixed inset-0 z-50 flex items-center justify-center w-full h-full backdrop-blur-sm'>
+    <div
+      onClick={closeModal}
+      className='fixed inset-0 z-50 flex items-center justify-center w-full h-full backdrop-blur-sm'
+    >
       <motion.div
+        onClick={(e) => e.stopPropagation()}
         className='relative w-full max-w-4xl max-h-[90vh] p-4 overflow-y-auto border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10'
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -27,7 +34,13 @@ const ProjectDetails = ({
           <img src='assets/close.svg' className='w-6 h-6' />
         </button>
         <div className='p-2'>
-          <CustomSlider slides={images} />
+          <Suspense
+            fallback={
+              <div className='text-white text-center'>Loading slider...</div>
+            }
+          >
+            <LazySlider slides={images} />
+          </Suspense>
         </div>
 
         <div className='p-5'>
