@@ -1,39 +1,6 @@
 export const myProjects = [
   {
     id: 1,
-    title: 'Solar Equipment Store & Admin System',
-    description:
-      'A large Angular-based e-commerce platform for solar equipment featuring a customer storefront and a powerful administrative dashboard.',
-    subDescription: [
-      'Developed a client-facing store with categories, cart, wishlist, search, and product filtering.',
-      'Built a complex admin panel with 20+ pages including warehouse management, stock movement, analytics, and order tracking.',
-      'Implemented multi-role architecture where admins can create managers and moderators with different permissions.',
-      'Designed scalable UI structures to support future expansion and new business logic.',
-    ],
-    href: '',
-    logo: '',
-    image: '/My-portfolio/assets/projects/accessories.jpg',
-    tags: [
-      {
-        id: 1,
-        name: 'Angular',
-        path: '/My-portfolio/assets/logos/angular.svg',
-      },
-      {
-        id: 2,
-        name: 'TypeScript',
-        path: '/My-portfolio/assets/logos/typescript.svg',
-      },
-
-      {
-        id: 4,
-        name: 'TailwindCSS',
-        path: '/My-portfolio/assets/logos/tailwindcss.svg',
-      },
-    ],
-  },
-  {
-    id: 2,
     title: 'Electronics E-commerce Platform',
     description:
       'A scalable full-stack electronics marketplace built with Next.js, featuring dynamic product variations and advanced filtering.',
@@ -47,6 +14,14 @@ export const myProjects = [
     href: '',
     logo: '',
     image: '/My-portfolio/assets/projects/clicon-ecommerce/main.png',
+    images: [
+      '/My-portfolio/assets/projects/clicon-ecommerce/main.png',
+      '/My-portfolio/assets/projects/clicon-ecommerce/open_navbar_menu.png',
+      '/My-portfolio/assets/projects/clicon-ecommerce/open_cart_menu.png',
+      '/My-portfolio/assets/projects/clicon-ecommerce/open_search.png',
+      '/My-portfolio/assets/projects/clicon-ecommerce/catalog.png',
+      '/My-portfolio/assets/projects/clicon-ecommerce/product_detail.png',
+    ],
     tags: [
       {
         id: 1,
@@ -73,35 +48,81 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
-    title: 'Movie Platform',
+    id: 2,
+    title: 'Cocktail Bar Landing Page',
     description:
-      'A full-stack movie discovery application with personalized accounts, search, and social features.',
+      'A modern animated landing page for a cocktail bar built with React, Tailwind CSS, and GSAP, focused on immersive storytelling and smooth user experience.',
     subDescription: [
-      'Developed the frontend with Next.js, TypeScript, and Tailwind CSS.',
-      'Built the backend using Django with structured API communication.',
-      'Implemented authentication, user profiles, and wishlist functionality.',
-      'Added movie categorization, filtering, and fast search capabilities.',
+      'Developed a fully responsive single-page website with rich scroll-based animations and cinematic transitions.',
+      'Implemented GSAP timelines to animate hero sections, parallax images, menus, and interactive elements.',
+      'Designed reusable UI blocks for cocktails, mocktails, ratings, and recipe presentations.',
+      'Focused on performance, accessibility, and clean component architecture.',
+      'Created a strong visual identity using typography, motion, and high-quality imagery.',
     ],
     href: '',
     logo: '',
-    image: '/My-portfolio/assets/projects/accessories.jpg',
+    image: '/My-portfolio/assets/projects/cocktails/main-hero.png',
+    images: [
+      '/My-portfolio/assets/projects/cocktails/main-hero.png',
+      '/My-portfolio/assets/projects/cocktails/art1.png',
+      '/My-portfolio/assets/projects/cocktails/art2.png',
+      '/My-portfolio/assets/projects/cocktails/second-section.png',
+    ],
     tags: [
       {
         id: 1,
-        name: 'Next.js',
-        path: '/My-portfolio/assets/logos/next2.svg',
+        name: 'React',
+        path: '/My-portfolio/assets/logos/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: '/My-portfolio/assets/logos/tailwindcss.svg',
+      },
+      {
+        id: 3,
+        name: 'GSAP',
+        path: '/My-portfolio/assets/logos/gsap.svg',
+      },
+    ],
+  },
+  {
+    id: 1,
+    title: 'Solar Equipment Store & Admin System',
+    description:
+      'A large Angular-based e-commerce platform for solar equipment featuring a customer storefront and a powerful administrative dashboard.',
+    subDescription: [
+      'Developed a client-facing store with categories, cart, wishlist, search, and product filtering.',
+      'Built a complex admin panel with 20+ pages including warehouse management, stock movement, analytics, and order tracking.',
+      'Implemented multi-role architecture where admins can create managers and moderators with different permissions.',
+      'Designed scalable UI structures to support future expansion and new business logic.',
+    ],
+    href: '',
+    logo: '',
+    image: '/My-portfolio/assets/projects/angular/home1.png',
+    images: [
+      '/My-portfolio/assets/projects/angular/home1.png',
+      '/My-portfolio/assets/projects/angular/catalog2.png',
+      '/My-portfolio/assets/projects/angular/search3.png',
+      '/My-portfolio/assets/projects/angular/product4.png',
+      '/My-portfolio/assets/projects/angular/cart5.png',
+      '/My-portfolio/assets/projects/angular/dashboard1.png',
+      '/My-portfolio/assets/projects/angular/dashboard2.png',
+      '/My-portfolio/assets/projects/angular/soldproducts.png',
+      '/My-portfolio/assets/projects/angular/product-create.png',
+    ],
+    tags: [
+      {
+        id: 1,
+        name: 'Angular',
+        path: '/My-portfolio/assets/logos/angular.svg',
       },
       {
         id: 2,
         name: 'TypeScript',
         path: '/My-portfolio/assets/logos/typescript.svg',
       },
-      {
-        id: 3,
-        name: 'Django',
-        path: '/My-portfolio/assets/logos/django.svg',
-      },
+
       {
         id: 4,
         name: 'TailwindCSS',
@@ -215,4 +236,17 @@ export const reviews = [
     body: 'So glad I found this. It has changed the game for me.',
     img: 'https://robohash.org/eve',
   },
+];
+
+export const techStack = [
+  'React',
+  'Next.js',
+  'TypeScript',
+  'TailwindCSS',
+  'React Query',
+  'Zustand',
+  'GSAP',
+  'Node.js',
+  'Django',
+  'REST API',
 ];

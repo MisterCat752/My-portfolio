@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 @import "tailwindcss";
 @theme {
   --color-primary: #030412;
@@ -135,4 +137,15 @@ body {
 
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
+}
+.custom-dots li button:before {
+  display: none;
+}
+
+.custom-dots li {
+  margin: 0 6px;
+}
+
+.custom-dots {
+  bottom:-15
 }

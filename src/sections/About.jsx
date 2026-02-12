@@ -3,7 +3,7 @@ import Card from '../components/Card';
 import { Globe } from '../components/globe';
 import CopyEmailButton from '../components/CopyEmailButton';
 import { Frameworks } from '../components/FrameWorks';
-
+import { techStack } from '../constants';
 const About = () => {
   const grid2Container = useRef();
   return (
@@ -100,12 +100,24 @@ const About = () => {
         </div>
         {/* Grid 5 */}
         <div className='grid-default-color grid-5'>
-          <div className='z-10 w-[50%]'>
-            <p className='headText'>Teck Stack</p>
-            <p className='subtext'>
-              I specialize in a variety of languages, frameworks, and tools taht
-              allow me to build robust and scalable applications
+          <div className='z-10 w-[50%] space-y-4'>
+            <p className='headText'>Tech Stack</p>
+
+            <p className='text-neutral-300 leading-relaxed'>
+              I build scalable and high-performance web applications using
+              modern frontend and backend technologies.
             </p>
+
+            <div className='flex flex-wrap gap-2 pt-2'>
+              {techStack.map((tech) => (
+                <span
+                  key={tech}
+                  className='px-3 py-1 text-sm border rounded-full bg-white/5 border-white/10 text-white/80 backdrop-blur'
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
           <div className='absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125'>
             <Frameworks />
