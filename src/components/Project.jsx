@@ -4,6 +4,7 @@ import ProjectDetails from './ProjectDetails';
 const Project = ({
   title,
   description,
+  github,
   subDescription,
   href,
   image,
@@ -42,6 +43,7 @@ const Project = ({
           description={description}
           subDescription={subDescription}
           image={image}
+          github={github}
           images={images}
           tags={tags}
           href={href}

@@ -11,7 +11,8 @@ export const myProjects = [
       'Managed global application state with Zustand.',
       'Created user features such as authentication, profiles, and order management.',
     ],
-    href: '',
+    href: 'https://next-magazin-electroniki-i9b2.vercel.app/',
+    github: 'https://github.com/MisterCat752/next-magazin-electroniki',
     logo: '',
     image: '/My-portfolio/assets/projects/clicon-ecommerce/main.png',
     images: [
@@ -60,7 +61,8 @@ export const myProjects = [
       'Focused on performance, accessibility, and clean component architecture.',
       'Created a strong visual identity using typography, motion, and high-quality imagery.',
     ],
-    href: '',
+    href: 'https://mistercat752.github.io/coctails/',
+    github: 'https://github.com/MisterCat752/coctails',
     logo: '',
     image: '/My-portfolio/assets/projects/cocktails/main-hero.png',
     images: [
@@ -83,7 +85,7 @@ export const myProjects = [
       {
         id: 3,
         name: 'GSAP',
-        path: '/My-portfolio/assets/logos/gsap.svg',
+        path: 'https://tanstack.com/images/logos/logo-white.svg',
       },
     ],
   },
@@ -99,7 +101,8 @@ export const myProjects = [
       'Implemented multi-role architecture where admins can create managers and moderators with different permissions.',
       'Designed scalable UI structures to support future expansion and new business logic.',
     ],
-    href: '',
+    href: 'https://github.com/MisterCat752/alternative-power-angular',
+    github: 'https://github.com/MisterCat752/alternative-power-angular',
     logo: '',
     image: '/My-portfolio/assets/projects/angular/home1.png',
     images: [
@@ -144,8 +147,10 @@ export const myProjects = [
       'Enabled users to place orders with customizable options for each product.',
       'Designed a scalable and responsive UI to support future food categories and business expansion.',
     ],
-    href: '',
+    href: 'https://github.com/MisterCat752/next-pizza',
     logo: '',
+    github: 'https://github.com/MisterCat752/next-pizza',
+
     image: '/My-portfolio/assets/projects/pizza/1.png',
     images: [
       '/My-portfolio/assets/projects/pizza/1.png',
@@ -165,6 +170,11 @@ export const myProjects = [
         name: 'TypeScript',
         path: '/My-portfolio/assets/logos/typescript.svg',
       },
+      {
+        id: 3,
+        name: 'Redux',
+        path: '/My-portfolio/assets/logos/redux.svg',
+      },
 
       {
         id: 4,
@@ -177,35 +187,23 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: 'WhatsApp',
-    href: '',
-    icon: ' /My-portfolio/assets/socials/whatsApp.svg',
+    name: 'Telegram',
+    href: 'https://t.me/winter575',
+    icon: '/My-portfolio/assets/logos/tg.svg',
   },
   {
-    name: 'Linkedin',
+    name: 'GitHub',
     href: 'https://github.com/MisterCat752',
-    icon: '/My-portfolio/assets/socials/linkedIn.svg',
+    icon: '/My-portfolio/assets/logos/github.svg',
   },
   {
     name: 'Instagram',
-    href: 'https://github.com/MisterCat752',
+    href: 'https://t.me/winter575',
     icon: '/My-portfolio/assets/socials/instagram.svg',
   },
 ];
 
 export const experiences = [
-  {
-    title: 'Front-End Developer',
-    job: 'Solar Equipment E-commerce Platform',
-    date: '2026 ',
-    contents: [
-      'Developed a large-scale Angular front-end application for a solar equipment store, including both customer-facing and administrative systems.',
-      'Built a comprehensive admin dashboard with 20+ pages covering warehouse management, stock movement tracking, order processing, and analytics.',
-      'Implemented product creation and management workflows for administrators, managers, and moderators with role-based access.',
-      'Designed client features such as product categories, shopping cart, wishlist, search, and advanced filtering.',
-      'Collaborated on scalable UI architecture to support future growth and new business requirements.',
-    ],
-  },
   {
     title: 'Full-Stack Developer',
     job: 'Electronics E-commerce Platform',
@@ -219,14 +217,41 @@ export const experiences = [
     ],
   },
   {
-    title: 'Full-Stack Developer',
-    job: 'Movie Discovery Platform',
-    date: '2025-2026',
+    title: 'Front-End Developer',
+    job: 'Solar Equipment E-commerce Platform',
+    date: '2026 ',
     contents: [
-      'Built a full-stack movie platform using Next.js, Django, TypeScript, and Tailwind CSS.',
-      'Implemented category browsing, intelligent search, authentication, and personalized user profiles.',
-      'Developed wishlist functionality and user messaging features.',
-      'Integrated front-end and back-end systems with clean API communication and optimized performance.',
+      'Developed a large-scale Angular front-end application for a solar equipment store, including both customer-facing and administrative systems.',
+      'Built a comprehensive admin dashboard with 20+ pages covering warehouse management, stock movement tracking, order processing, and analytics.',
+      'Implemented product creation and management workflows for administrators, managers, and moderators with role-based access.',
+      'Designed client features such as product categories, shopping cart, wishlist, search, and advanced filtering.',
+      'Collaborated on scalable UI architecture to support future growth and new business requirements.',
+    ],
+  },
+  {
+    title: 'Frontend Developer',
+    job: 'Cocktail Bar Animated Landing Page',
+    date: '2025',
+    contents: [
+      'Developed an immersive animated landing page using React, Tailwind CSS, and GSAP.',
+      'Implemented complex scroll-driven timelines, parallax effects, and cinematic transitions.',
+      'Built reusable UI sections for cocktails, mocktails, ratings, and recipe highlights.',
+      'Focused on smooth performance, responsive layouts, and accessibility across devices.',
+      'Structured clean and maintainable components to support future visual and content updates.',
+      'Crafted a strong brand atmosphere through typography, motion design, and high-quality imagery.',
+    ],
+  },
+  {
+    title: 'Full-Stack Developer',
+    job: 'Pizza & Food Ordering Platform',
+    date: '2025 ',
+    contents: [
+      'Engineered a full-stack food ordering platform using Next.js, TypeScript, Tailwind CSS, Prisma, and Redux.',
+      'Built a dynamic product system with variations, add-ons, and customizable options for each pizza and menu item.',
+      'Implemented global state management for cart, pricing calculations, and order workflows.',
+      'Developed server-side API routes with database integration, validation, and persistent order storage.',
+      'Optimized routing and rendering using modern Next.js features for fast navigation and scalability.',
+      'Designed a responsive UI ready for expansion into new food categories and future business growth.',
     ],
   },
 ];

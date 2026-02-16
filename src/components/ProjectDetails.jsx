@@ -8,6 +8,7 @@ const ProjectDetails = ({
   title,
   description,
   subDescription,
+  github,
   image,
   images,
   tags,
@@ -52,7 +53,7 @@ const ProjectDetails = ({
             </p>
           ))}
 
-          <div className='flex items-center justify-between mt-4'>
+          <div className='flex items-center justify-between mt-4 flex-wrap gap-2'>
             <div className='flex gap-3'>
               {tags.map((tag) => (
                 <img
@@ -64,13 +65,27 @@ const ProjectDetails = ({
               ))}
             </div>
 
-            <a
-              href={href}
-              className='inline-flex items-center gap-1 font-medium cursor-pointer hover-animation'
-            >
-              View Project
-              <img src='assets/arrow-up.svg' className='size-4' />
-            </a>
+            <div className='flex gap-3'>
+              <a
+                href={href}
+                target='_blank'
+                className='inline-flex  items-center  gap-1 font-medium cursor-pointer hover-animation'
+              >
+                View Project
+                <img src='/My-portfolio/arrow-up.svg' className='size-4' />
+              </a>
+              <a
+                href={github}
+                target='_blank'
+                className='inline-flex  items-center  gap-1 font-medium cursor-pointer hover-animation'
+              >
+                View Github
+                <img
+                  src='/My-portfolio/assets/logos/github.svg'
+                  className='size-4'
+                />
+              </a>
+            </div>
           </div>
         </div>
       </motion.div>
