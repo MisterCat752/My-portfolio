@@ -1,16 +1,76 @@
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated portfolio website built with **React**, **Framer Motion**, and **Tailwind CSS**, showcasing all my projects, skills, and work experience.  
+The site is fully responsive, interactive, and designed to highlight my capabilities as a full-stack developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Home](public/screenshots/main.png)
+![Projects](public/screenshots/about.png)
+![Experience](public/screenshots/projects.png)
+![Contact](public/screenshots/project-detail.png)
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Tailwind CSS 4
+- Framer Motion
+- React Slick (carousel/slider)
+- EmailJS (contact form)
+- Responsive design with react-responsive
+- Tailwind Merge (className management)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+- Interactive hero section with animated typography and elements
+- Projects showcase slider combining multiple technologies
+- Dynamic presentation of work experience
+- Contact form integrated with EmailJS for direct messages
+- Smooth animations across sections powered by Framer Motion
+- Fully responsive design for desktop, tablet, and mobile
+- Easy-to-maintain and extendable component structure
+
+---
+
+## 🏗 Architecture & Design Philosophy
+
+- Component-based architecture: each section (About, Projects, Experience, Contact) is self-contained
+- Animations separated from content for maintainability
+- Carousel slider used to showcase multiple projects interactively
+- State and effects managed locally within components using React hooks
+- Designed for scalability: new projects or experiences can be added without refactoring
+
+---
+
+## 🎨 UX & Motion Highlights
+
+- Animated page transitions using Framer Motion
+- Micro-interactions for buttons, links, and hover states
+- Smooth slider animations with react-slick
+- Typographic and layout consistency to maintain a clean visual identity
+- Focused on performance and accessibility
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone <https://github.com/MisterCat752/My-portfolio.git>
+cd portfolio
+
+
+2. Install dependencies
+npm install
+
+3. Run development server
+npm run dev
+
+4. Build for production
+npm run build
+npm run preview
+```
