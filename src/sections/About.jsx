@@ -5,6 +5,38 @@ import CopyEmailButton from '../components/CopyEmailButton';
 import { Frameworks } from '../components/FrameWorks';
 import { techStack } from '../constants';
 const About = () => {
+  const floatingCards = [
+    { style: { rotate: '45deg', top: '40%', left: '20%' }, text: 'GSAP' },
+    { style: { rotate: '-55deg', top: '60%', left: '45%' }, text: 'Animation' },
+    {
+      style: { rotate: '20deg', top: '10%', left: '38%' },
+      text: 'Design Patterns',
+    },
+    {
+      style: { rotate: '-45deg', top: '55%', left: '0%' },
+      text: 'Design Principles',
+    },
+
+    {
+      style: { rotate: '30deg', top: '20%', right: '10%' },
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+    },
+    {
+      style: { rotate: '30deg', top: '70%', right: '10%' },
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg',
+    },
+    {
+      style: { rotate: '-45deg', top: '70%', left: '25%' },
+      image: 'assets/logos/next2.svg',
+    },
+    {
+      style: { rotate: '-45deg', top: '5%', left: '10%' },
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
+    },
+  ];
   const grid2Container = useRef();
   return (
     <section className='c-space section-spacing' id='about'>
@@ -34,56 +66,23 @@ const About = () => {
             <p className='flex items-end text-5xl text-gray-500'>
               CODE IS CRAFT
             </p>
-            <Card
-              style={{ rotate: '45deg', top: '40%', left: '20%' }}
-              text='GSAP'
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: '-30deg', top: '60%', left: '45%' }}
-              text='Animation'
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: '20deg', top: '10%', left: '38%' }}
-              text='Design Patterns'
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: '-45deg', top: '55%', left: '0%' }}
-              text='Design Principles'
-              containerRef={grid2Container}
-            />
 
-            <Card
-              style={{ rotate: '30deg', top: '70%', left: '70%' }}
-              image='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: '30deg', top: '70%', left: '70%' }}
-              image='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: '-45deg', top: '70%', left: '25%' }}
-              image='assets/logos/next2.svg'
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: '-45deg', top: '5%', left: '10%' }}
-              image='https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg'
-              containerRef={grid2Container}
-            />
+            {floatingCards.map((card, index) => (
+              <Card
+                key={index}
+                style={card.style}
+                text={card.text}
+                image={card.image}
+                containerRef={grid2Container}
+              />
+            ))}
           </div>
         </div>
         {/* Grid 3 */}
         <div className='grid-black-color grid-3'>
           <div className='z-10 w-[50%]'>
             <p className='headtext'>Time Zone</p>
-            <p className='subtext'>
-              I'm based in Earth, and open to remote work worldwide
-            </p>
+            <p className='subtext'>Based in Chisinau • Open to Remote Work</p>
           </div>
           <figure className='absolute left-[30%] top-0'>
             <Globe />

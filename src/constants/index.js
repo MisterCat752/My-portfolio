@@ -50,6 +50,53 @@ export const myProjects = [
   },
   // 2
   {
+    id: 3,
+    title: 'Solar Equipment Store & Admin System',
+    description:
+      'A large Angular-based e-commerce platform for solar equipment featuring a customer storefront and a powerful administrative dashboard.',
+    subDescription: [
+      'Developed a client-facing store with categories, cart, wishlist, search, and product filtering.',
+      'Built a complex admin panel with 20+ pages including warehouse management, stock movement, analytics, and order tracking.',
+      'Implemented multi-role architecture where admins can create managers and moderators with different permissions.',
+      'Designed scalable UI structures to support future expansion and new business logic.',
+    ],
+    href: 'https://mistercat752.github.io/alternative-power-angular/',
+    github: 'https://github.com/MisterCat752/alternative-power-angular',
+    logo: '',
+    image: '/My-portfolio/assets/projects/angular/home1.png',
+    images: [
+      '/My-portfolio/assets/projects/angular/home1.png',
+      '/My-portfolio/assets/projects/angular/catalog2.png',
+      '/My-portfolio/assets/projects/angular/search3.png',
+      '/My-portfolio/assets/projects/angular/product4.png',
+      '/My-portfolio/assets/projects/angular/cart5.png',
+      '/My-portfolio/assets/projects/angular/dashboard1.png',
+      '/My-portfolio/assets/projects/angular/dashboard2.png',
+      '/My-portfolio/assets/projects/angular/soldproducts.png',
+      '/My-portfolio/assets/projects/angular/product-create.png',
+    ],
+    tags: [
+      {
+        id: 1,
+        name: 'Angular',
+        path: '/My-portfolio/assets/logos/angular.svg',
+      },
+      {
+        id: 2,
+        name: 'TypeScript',
+        path: '/My-portfolio/assets/logos/typescript.svg',
+      },
+
+      {
+        id: 4,
+        name: 'TailwindCSS',
+        path: '/My-portfolio/assets/logos/tailwindcss.svg',
+      },
+    ],
+  },
+
+  // 3
+  {
     id: 2,
     title: 'Cocktail Bar Landing Page',
     description:
@@ -89,52 +136,7 @@ export const myProjects = [
       },
     ],
   },
-  // 3
-  {
-    id: 3,
-    title: 'Solar Equipment Store & Admin System',
-    description:
-      'A large Angular-based e-commerce platform for solar equipment featuring a customer storefront and a powerful administrative dashboard.',
-    subDescription: [
-      'Developed a client-facing store with categories, cart, wishlist, search, and product filtering.',
-      'Built a complex admin panel with 20+ pages including warehouse management, stock movement, analytics, and order tracking.',
-      'Implemented multi-role architecture where admins can create managers and moderators with different permissions.',
-      'Designed scalable UI structures to support future expansion and new business logic.',
-    ],
-    href: 'https://github.com/MisterCat752/alternative-power-angular',
-    github: 'https://github.com/MisterCat752/alternative-power-angular',
-    logo: '',
-    image: '/My-portfolio/assets/projects/angular/home1.png',
-    images: [
-      '/My-portfolio/assets/projects/angular/home1.png',
-      '/My-portfolio/assets/projects/angular/catalog2.png',
-      '/My-portfolio/assets/projects/angular/search3.png',
-      '/My-portfolio/assets/projects/angular/product4.png',
-      '/My-portfolio/assets/projects/angular/cart5.png',
-      '/My-portfolio/assets/projects/angular/dashboard1.png',
-      '/My-portfolio/assets/projects/angular/dashboard2.png',
-      '/My-portfolio/assets/projects/angular/soldproducts.png',
-      '/My-portfolio/assets/projects/angular/product-create.png',
-    ],
-    tags: [
-      {
-        id: 1,
-        name: 'Angular',
-        path: '/My-portfolio/assets/logos/angular.svg',
-      },
-      {
-        id: 2,
-        name: 'TypeScript',
-        path: '/My-portfolio/assets/logos/typescript.svg',
-      },
 
-      {
-        id: 4,
-        name: 'TailwindCSS',
-        path: '/My-portfolio/assets/logos/tailwindcss.svg',
-      },
-    ],
-  },
   {
     id: 4,
     title: 'Pizza & Food Ordering Platform',
@@ -188,7 +190,7 @@ export const myProjects = [
 export const mySocials = [
   {
     name: 'Telegram',
-    href: 'https://t.me/winter575',
+    href: 'https://t.me/Seneca2',
     icon: '/My-portfolio/assets/logos/tg.svg',
   },
   {
@@ -198,7 +200,7 @@ export const mySocials = [
   },
   {
     name: 'Instagram',
-    href: 'https://t.me/winter575',
+    href: 'https://t.me/Seneca2',
     icon: '/My-portfolio/assets/socials/instagram.svg',
   },
 ];

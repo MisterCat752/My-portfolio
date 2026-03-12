@@ -21,7 +21,12 @@ const Project = ({
         onMouseLeave={() => setPreview(null)}
       >
         <div>
-          <p className='text-2xl'>{title}</p>
+          <button
+            onClick={() => setIsHidden(true)}
+            className='text-2xl text-white hover:text-aqua cursor-pointer transition-colors duration-300 hover-animation text-left'
+          >
+            {title}
+          </button>
           <div className='flex gap-5 mt-2 text-sand'>
             {tags.map((tag) => (
               <span key={tag.id}>{tag.name}</span>

@@ -7,8 +7,10 @@ const CustomSlider = ({ slides }) => {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    customPaging: () => <div className='w-3 h-3 bg-gray-400 rounded-full' />,
-    dotsClass: 'slick-dots custom-dots',
+    customPaging: () => (
+      <div className='w-4 h-4 bg-gray-400 rounded-full transition-all' />
+    ),
+    dotsClass: 'slick-dots  custom-dots',
   };
 
   return (
@@ -20,7 +22,7 @@ const CustomSlider = ({ slides }) => {
               src={slide}
               alt={slide}
               loading='lazy'
-              className='w-full  h-full рobject-contain rounded-2xl'
+              className='w-full  h-full object-contain rounded-2xl'
             />
           </div>
         ))}

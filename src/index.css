@@ -145,9 +145,20 @@ body {
 }
 
 .custom-dots li {
-  margin: 0 6px;
+  @apply mx-[6px];
+}
+
+.custom-dots div {
+  @apply w-[10px] h-[10px] rounded-full transition-all duration-300;
+  background: rgba(122, 87, 219, 0.35);
+}
+
+.custom-dots li.slick-active div {
+  @apply scale-125;
+  background: #33c2cc;
+  box-shadow: 0 0 8px rgba(51, 194, 204, 0.6);
 }
 
 .custom-dots {
-  bottom:-25
+  @apply bottom-[-35px];
 }
