@@ -10,6 +10,9 @@ The site is fully responsive, interactive, and designed to highlight my capabili
 ![Experience](public/screenshots/projects.png)
 ![Contact](public/screenshots/project-detail.png)
 
+
+
+Live Demo: [View Portfolio](https://mistercat752.github.io/My-portfolio/)
 ## 🚀 Tech Stack
 
 - React 19
