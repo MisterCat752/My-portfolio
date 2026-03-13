@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Card from '../components/Card';
 import { Globe } from '../components/globe';
 import CopyEmailButton from '../components/CopyEmailButton';
@@ -19,13 +19,11 @@ const About = () => {
 
     {
       style: { rotate: '30deg', top: '20%', right: '10%' },
-      image:
-        'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
+      image: 'assets/logos/react.svg',
     },
     {
       style: { rotate: '30deg', top: '70%', right: '10%' },
-      image:
-        'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg',
+      image: 'assets/logos/javascript.svg',
     },
     {
       style: { rotate: '-45deg', top: '70%', left: '25%' },
@@ -33,10 +31,28 @@ const About = () => {
     },
     {
       style: { rotate: '-45deg', top: '5%', left: '10%' },
-      image:
-        'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg',
+      image: 'assets/logos/tailwindcss.svg',
     },
   ];
+  const globeRef = useRef(null);
+  const [showGlobe, setShowGlobe] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowGlobe(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 },
+    );
+
+    if (globeRef.current) observer.observe(globeRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   const grid2Container = useRef();
   return (
     <section className='c-space section-spacing' id='about'>
@@ -45,7 +61,10 @@ const About = () => {
         {/* Grid 1 */}
         <div className='flex items-end grid-default-color grid-1'>
           <img
-            src='assets/coding-pov.png'
+            src='assets/background/coding-pov.webp'
+            width='572'
+            height='350'
+            loading='lazy'
             className='absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]'
           />
           <div className='z-10'>
@@ -55,7 +74,7 @@ const About = () => {
               and software and web applications.
             </p>
           </div>
-          <div className='absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo' />
+          <div className='absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo' />
         </div>
         {/* Grid 2 */}
         <div className='grid-default-color grid-2'>
@@ -84,8 +103,8 @@ const About = () => {
             <p className='headtext'>Time Zone</p>
             <p className='subtext'>Based in Chisinau • Open to Remote Work</p>
           </div>
-          <figure className='absolute left-[30%] top-0'>
-            <Globe />
+          <figure ref={globeRef} className='absolute left-[30%] top-0'>
+            {showGlobe && <Globe />}
           </figure>
         </div>
         {/* Grid 4 */}

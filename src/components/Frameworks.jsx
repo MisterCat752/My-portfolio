@@ -7,9 +7,7 @@ export function Frameworks() {
     'next2',
     'django',
     'postgresql',
-
     'css3',
-
     'git',
     'html5',
     'javascript',
@@ -18,22 +16,30 @@ export function Frameworks() {
     'tailwindcss',
     'vitejs',
   ];
+
+  const reversed = [...skills].reverse();
+
   return (
     <div className='relative flex h-[15rem] w-full flex-col items-center justify-center'>
       <OrbitingCircles iconSize={40}>
-        {skills.map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} />
+        {skills.map((skill) => (
+          <Icon key={skill} src={`assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
+
       <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
-        {skills.reverse().map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} />
+        {reversed.map((skill) => (
+          <Icon key={skill} src={`assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
     </div>
   );
 }
-
 const Icon = ({ src }) => (
-  <img src={src} className='duration-200 rounded-sm hover:scale-110' />
+  <img
+    src={src}
+    loading='lazy'
+    decoding='async'
+    className='rounded-sm hover:scale-110 transition-transform duration-200'
+  />
 );

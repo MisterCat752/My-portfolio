@@ -162,3 +162,7 @@ body {
 .custom-dots {
   @apply bottom-[-35px];
 }
+
+.will-change-transform {
+  will-change: transform;
+}

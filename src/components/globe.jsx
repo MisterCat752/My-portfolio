@@ -12,12 +12,12 @@ const GLOBE_CONFIG = {
   width: 800,
   height: 800,
   onRender: () => {},
-  devicePixelRatio: Math.min(window.devicePixelRatio, 1.5),
+  devicePixelRatio: Math.min(window.devicePixelRatio, 1.2),
   phi: 0,
   theta: 0.3,
   dark: 1,
   diffuse: 0.4,
-  mapSamples: 4000,
+  mapSamples: 2000,
   mapBrightness: 1.2,
   baseColor: [1, 1, 1],
   markerColor: [1, 1, 1],
@@ -80,7 +80,7 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
       width: width * 2,
       height: width * 2,
       onRender: (state) => {
-        if (!pointerInteracting.current) phi += 0.005;
+        if (!pointerInteracting.current) phi += 0.003;
         state.phi = phi + rs.get();
         state.width = width * 2;
         state.height = width * 2;

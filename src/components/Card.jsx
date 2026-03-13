@@ -1,23 +1,31 @@
-import { motion } from "motion/react";
+import { motion } from 'motion/react';
+
 const Card = ({ style, text, image, containerRef }) => {
-  return image && !text ? (
-    <motion.img
-      className="absolute w-15 cursor-grab"
-      src={image}
-      style={style}
-      whileHover={{ scale: 1.05 }}
-      drag
-      dragConstraints={containerRef}
-      dragElastic={1}
-    />
-  ) : (
+  const commonProps = {
+    style,
+    drag: true,
+    dragConstraints: containerRef,
+    dragElastic: 0.6,
+    dragMomentum: false,
+    whileHover: { scale: 1.05 },
+    className: 'absolute cursor-grab will-change-transform',
+  };
+
+  if (image && !text) {
+    return (
+      <motion.img
+        {...commonProps}
+        src={image}
+        loading='lazy'
+        className={`${commonProps.className} w-14`}
+      />
+    );
+  }
+
+  return (
     <motion.div
-      className="absolute px-1 py-4 text-xl text-center rounded-full ring ring-gray-700 font-extralight bg-storm w-[12rem] cursor-grab"
-      style={style}
-      whileHover={{ scale: 1.05 }}
-      drag
-      dragConstraints={containerRef}
-      dragElastic={1}
+      {...commonProps}
+      className={`${commonProps.className} px-2 py-3 text-xl text-center rounded-full ring ring-gray-700 font-extralight bg-storm w-[12rem]`}
     >
       {text}
     </motion.div>
