@@ -16,7 +16,6 @@ const ProjectDetails = ({
 }) => {
   const [showSlider, setShowSlider] = useState(false);
 
-  // Предзагрузка изображений и задержка показа слайдера
   useEffect(() => {
     images?.forEach((img) => {
       const preload = new Image();
@@ -82,27 +81,30 @@ const ProjectDetails = ({
               ))}
             </div>
 
-            <div className='flex gap-3'>
-              <a
-                href={href}
-                target='_blank'
-                className='inline-flex items-center gap-1 font-medium hover-animation'
-              >
-                View Project
-                <img src='/My-portfolio/arrow-up.svg' className='w-4 h-4' />
-              </a>
-              <a
-                href={github}
-                target='_blank'
-                className='inline-flex items-center gap-1 font-medium hover-animation'
-              >
-                View Github
-                <img
-                  src='/My-portfolio/assets/logos/github.svg'
-                  className='w-4 h-4'
-                />
-              </a>
-            </div>
+            {href && github && (
+              <div className='flex gap-3'>
+                <a
+                  href={href}
+                  target='_blank'
+                  className='inline-flex items-center gap-1 font-medium hover-animation'
+                >
+                  View Project
+                  <img src='/My-portfolio/arrow-up.svg' className='w-4 h-4' />
+                </a>
+
+                <a
+                  href={github}
+                  target='_blank'
+                  className='inline-flex items-center gap-1 font-medium hover-animation'
+                >
+                  View Github
+                  <img
+                    src='/My-portfolio/assets/logos/github.svg'
+                    className='w-4 h-4'
+                  />
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </motion.div>

@@ -149,9 +149,9 @@ export const myProjects = [
       'Enabled users to place orders with customizable options for each product.',
       'Designed a scalable and responsive UI to support future food categories and business expansion.',
     ],
-    href: 'https://github.com/MisterCat752/next-pizza',
+    href: '',
     logo: '',
-    github: 'https://github.com/MisterCat752/next-pizza',
+    github: '',
 
     image: '/My-portfolio/assets/projects/pizza/1.png',
     images: [
